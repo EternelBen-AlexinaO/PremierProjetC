@@ -8,5 +8,11 @@ namespace PremierProjetC.Classes
 {
     public abstract class Participant
     {
+        public string Civilite { get; set; }
+        public string Nom { get; set; }
+        public string Prenom { get; set; }
+        public DateTime DateNaissance { get; set; }
+        public Adresse AdresseParticipant { get; set; }
+
     }
 }
