@@ -21,6 +21,11 @@ namespace PremierProjetC.Classes
         public string UserName { get; set; }
         public string UserPassword { get; set; }
 
+        public override string ToString()
+        {
+            return $"{Nom} {Prenom} {UserName} {UserPassword} ";
+        }
+
         public List<Voyage>Voyages { get; set; }
         public List<Participant> Participants { get; set; }
         public List<DossierReservation>Dossiers { get; set; }
