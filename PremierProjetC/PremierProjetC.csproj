@@ -55,6 +55,9 @@
     <Compile Include="Classes\Destination.cs" />
     <Compile Include="Classes\DossierReservation.cs" />
     <Compile Include="Classes\Emailing.cs" />
+    <Compile Include="Classes\Esthetisme.cs" />
+    <Compile Include="Classes\GestionDonnees.cs" />
+    <Compile Include="Classes\Menus.cs" />
     <Compile Include="Classes\Participant.cs" />
     <Compile Include="Classes\Phoning.cs" />
     <Compile Include="Classes\Promotion.cs" />
