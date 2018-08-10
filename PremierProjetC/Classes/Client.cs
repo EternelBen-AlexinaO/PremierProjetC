@@ -6,7 +6,18 @@ using System.Threading.Tasks;
 
 namespace PremierProjetC.Classes
 {
-    public class Client:Participant
+    public sealed class Client:Participant
     {
+    public Client(string civilite, string nom, string prenom, DateTime dateNaissance, int numeroVoie, string nomVoie, string ville, string pays )
+        {
+            Civilite = civilite;
+            Nom = nom;
+            Prenom = prenom;
+            DateNaissance = dateNaissance;
+            NumeroVoie = numeroVoie;
+            NomVoie = nomVoie;
+            Ville = ville;
+            Pays = pays;
+        }
     }
 }
