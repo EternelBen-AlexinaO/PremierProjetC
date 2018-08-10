@@ -8,5 +8,8 @@ namespace PremierProjetC.Classes
 {
     public abstract class Promotion
     {
+        public double TauxPromotion { get; set; }
+
+        public List<DossierReservation>DossierReservations { get; set; }
     }
 }
