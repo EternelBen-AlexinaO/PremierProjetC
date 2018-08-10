@@ -13,6 +13,7 @@ namespace PremierProjetC.Classes
         public string UserName { get; set; }
         public string UserPassword { get; set; }
 
-
+        public List<Voyage>Voyages { get; set; }
+        
     }
 }
