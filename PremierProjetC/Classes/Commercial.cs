@@ -8,5 +8,10 @@ namespace PremierProjetC.Classes
 {
     public class Commercial
     {
+        public string Nom { get; set; }
+        public string Prenom { get; set; }
+        public string UserName { get; set; }
+        public string UserPassword { get; set; }
+
     }
 }

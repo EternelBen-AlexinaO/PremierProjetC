@@ -14,6 +14,7 @@ namespace PremierProjetC //renommer le nom du Proj suivant le projet donné
             Classes.Menus.PageAccueil();
 
             Console.ReadKey();
+
         }
     }
 }
