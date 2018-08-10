@@ -13,6 +13,6 @@ namespace PremierProjetC.Classes
         public string NumeroSiret { get; set; }
         public string Email { get; set; }
 
-        public List<Voyage> Voyages { get; set }
+        public List<Voyage> Voyages { get; set; }
     }
 }
