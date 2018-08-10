@@ -1,1 +1,2 @@
-Dartagnan; Francis; Usercom; Password;
+Dartagnan; Francis; UserCom; Password;
+Ginette; Caroline; GiCa; root;
