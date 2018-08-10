@@ -14,6 +14,10 @@ namespace PremierProjetC.Classes
         public string Ville { get; set; }
         public string Pays { get; set; }
 
+        //Methode pour retourner l'adresse (en attente)
+        //public static string EcrireAdresse(int numeroVoie, string nomVoie, int codePostal, string ville, string pays)
+        //{
 
+        //}
     }
 }
