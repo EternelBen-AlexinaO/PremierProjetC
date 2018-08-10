@@ -20,18 +20,52 @@ namespace PremierProjetC.Classes
             Console.ReadLine();
         }
 
-        public static void MenuGestionCommerciale()
+        public static string MenuGestionCommerciale()
         {
             Console.Clear();
             Esthetisme.MiseEnFormeTexte("APPLICATION METIER DE BO VOYAGE\n\n", ConsoleColor.DarkCyan, centre: true);
             Esthetisme.MiseEnFormeTexte("Connexion réussie\n\n", ConsoleColor.Red, centre: false);
             Esthetisme.MiseEnFormeTexte("MENU\n", centre: false);
             Esthetisme.MiseEnFormeTexte("1. Gestion des voyages", centre: false);
-            Esthetisme.MiseEnFormeTexte("2. Gestion des clients\n\n", centre: false);
+            Esthetisme.MiseEnFormeTexte("2. Gestion des clients", centre: false);
+            Esthetisme.MiseEnFormeTexte("Q. Quitter\n\n", centre: false);
             Esthetisme.MiseEnFormeTexte("Faites votre choix:", centre: false);
 
-
+            return Console.ReadLine();
         }
+
+        public static string MenuGestionVoyages()
+        {
+            Console.Clear();
+            Esthetisme.MiseEnFormeTexte("APPLICATION METIER DE BO VOYAGE\n\n", ConsoleColor.DarkCyan, centre: true);
+            Esthetisme.MiseEnFormeTexte("GESTION DES VOYAGES\n", centre: false);
+            Esthetisme.MiseEnFormeTexte("1. Voir les dossiers en attente", centre: false);
+            Esthetisme.MiseEnFormeTexte("2. Voir les dossiers en cours", centre: false);
+            Esthetisme.MiseEnFormeTexte("3. Voir les dossiers refusés", centre: false);
+            Esthetisme.MiseEnFormeTexte("4. Voir les dossiers acceptés", centre: false);
+            Esthetisme.MiseEnFormeTexte("5. Voir la liste des voyages", centre: false);
+            Esthetisme.MiseEnFormeTexte("R. Revenir au menu précédent", centre: false);
+            Esthetisme.MiseEnFormeTexte("Q. Quitter\n\n", centre: false);
+            Esthetisme.MiseEnFormeTexte("Faites votre choix:", centre: false);
+
+            return Console.ReadLine();
+        }
+
+        public static string MenuGestionClients()
+        {
+            Console.Clear();
+            Esthetisme.MiseEnFormeTexte("APPLICATION METIER DE BO VOYAGE\n\n", ConsoleColor.DarkCyan, centre: true);
+            Esthetisme.MiseEnFormeTexte("GESTION DES CLIENTS\n",centre: false);
+            Esthetisme.MiseEnFormeTexte("1. Voir la liste des clients", centre: false);
+            Esthetisme.MiseEnFormeTexte("2. Rechercher un client", centre: false);
+            Esthetisme.MiseEnFormeTexte("R. Revenir au menu précédent", centre: false);
+            Esthetisme.MiseEnFormeTexte("Q. Quitter\n\n", centre: false);
+            Esthetisme.MiseEnFormeTexte("Faites votre choix:", centre: false);
+
+            return Console.ReadLine();
+        }
+
+
 
     }
 }

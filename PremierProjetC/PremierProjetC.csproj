@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\Accompagnant.cs" />
+    <Compile Include="Classes\Adresse.cs" />
     <Compile Include="Classes\AgencePartenaire.cs" />
     <Compile Include="Classes\Assurance.cs" />
     <Compile Include="Classes\AssuranceAnnulation.cs" />
