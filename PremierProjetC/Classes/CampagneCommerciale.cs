@@ -8,5 +8,9 @@ namespace PremierProjetC.Classes
 {
     public abstract class CampagneCommerciale
     {
+        public string NomCampagne { get; set; }
+
+        public List<Participant>Participants { get; set; }
+
     }
 }
