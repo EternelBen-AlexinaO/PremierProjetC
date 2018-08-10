@@ -15,6 +15,7 @@ namespace PremierProjetC.Classes
         public List<Participant>Participants { get; set; }
         public List<Promotion>Promotions { get; set; }
 
-        public double CalculerPrixTotal() //Methode qui devra calculer le prix total en prenant en compte les tarifs promotionnels suivant l'âge des participants
+        /*public double CalculerPrixTotal(); //Methode qui devra calculer le prix total en prenant en compte les tarifs promotionnels suivant l'âge des participants
+        public string EtatDossier(); *///Methode pour indiquer si le dossier est en attente, en cours, refusé ou accepté
     }
 }
