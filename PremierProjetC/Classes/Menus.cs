@@ -18,10 +18,6 @@ namespace PremierProjetC.Classes
             Console.ReadLine();
             Esthetisme.MiseEnFormeTexte("Mot de Passe: ", centre: false);
             Console.ReadLine();
-
-            
-
-            
         }
         
      }
