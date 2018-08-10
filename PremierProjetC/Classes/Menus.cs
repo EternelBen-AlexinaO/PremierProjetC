@@ -11,8 +11,15 @@ namespace PremierProjetC.Classes
         //Methode pour page d'accueil/authentification
         public static void PageAccueil()
         {
-            Esthetisme.MiseEnFormeTexte("APPLICATION METIER DE BO VOYAGE", ConsoleColor.DarkBlue, centre: true);
-            Esthetisme.MiseEnFormeTexte("Veuillez vous identifier", centre: false);
+            Esthetisme.MiseEnFormeTexte("APPLICATION METIER DE BO VOYAGE\n\n", ConsoleColor.DarkCyan, centre: true);
+            Esthetisme.MiseEnFormeTexte("Cette application permet de gérer les voyages et les clients de BoVoyage\n\n", ConsoleColor.DarkCyan, centre: false);
+            Esthetisme.MiseEnFormeTexte("Veuillez vous identifier\n", centre: false);
+            Esthetisme.MiseEnFormeTexte("Nom Utilisateur:", centre: false);
+            Console.ReadLine();
+            Esthetisme.MiseEnFormeTexte("Mot de Passe: ", centre: false);
+            Console.ReadLine();
+            
+
             
         }
         
