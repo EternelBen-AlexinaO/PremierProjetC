@@ -9,15 +9,16 @@ namespace PremierProjetC //renommer le nom du Proj suivant le projet donné
 {
     class Program // renommer la classe Program par le nom de la classe principal qui identifira le nom du programme à creer et qui servira de point d'entrée via le Main. 
     {
-        static void Main(string[] args)
+        internal class Menu()
+        private static void Main()
         {
           Classes.Menus.PageAccueil();
             
             bool continuer = true;
             while (continuer)
             {
-                var choix = Classes.Menus.MenuGestionCommerciale();
-                switch (choix)
+                var choixPageAccueil = MenuGestionCommerciale();
+                switch (choixPageAccueil)
                 {
                     case "1":
                         Classes.Menus.MenuGestionVoyages();
@@ -26,6 +27,7 @@ namespace PremierProjetC //renommer le nom du Proj suivant le projet donné
                     case "2":
                         Classes.Menus.MenuGestionClients();
                         break;
+
                     case "q":
                     case "Q":
                         continuer = false;
@@ -37,10 +39,8 @@ namespace PremierProjetC //renommer le nom du Proj suivant le projet donné
                 }
 
             }
-                 
 
             Console.ReadKey();
-
         }
     }
 }
