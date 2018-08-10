@@ -58,6 +58,8 @@ namespace PremierProjetC.Classes
             Esthetisme.MiseEnFormeTexte("GESTION DES CLIENTS\n",centre: false);
             Esthetisme.MiseEnFormeTexte("1. Voir la liste des clients", centre: false);
             Esthetisme.MiseEnFormeTexte("2. Rechercher un client", centre: false);
+            Esthetisme.MiseEnFormeTexte("3. Créer un client", centre: false);
+            Esthetisme.MiseEnFormeTexte("4. Supprimer un client", centre: false);
             Esthetisme.MiseEnFormeTexte("R. Revenir au menu précédent", centre: false);
             Esthetisme.MiseEnFormeTexte("Q. Quitter\n\n", centre: false);
             Esthetisme.MiseEnFormeTexte("Faites votre choix:", centre: false);
