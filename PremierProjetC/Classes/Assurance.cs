@@ -8,5 +8,9 @@ namespace PremierProjetC.Classes
 {
     public abstract class Assurance
     {
+        public string NomCie { get; set; }
+
+        public List<DossierReservation>DossierReservations { get; set; }
+        
     }
 }
