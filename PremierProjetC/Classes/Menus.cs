@@ -15,9 +15,21 @@ namespace PremierProjetC.Classes
             Esthetisme.MiseEnFormeTexte("Cette application permet de gérer les voyages et les clients de BoVoyage\n\n", ConsoleColor.DarkCyan, centre: false);
             Esthetisme.MiseEnFormeTexte("Veuillez vous identifier\n", centre: false);
             Esthetisme.MiseEnFormeTexte("Nom Utilisateur:", centre: false);
-            Console.ReadLine();
+            var userName=Console.ReadLine();
             Esthetisme.MiseEnFormeTexte("Mot de Passe: ", centre: false);
             Console.ReadLine();
+            var userPassword = Console.ReadLine();
+            var commercial = new Commercial(); 
+            if (userName == commercial.UserName && userPassword==commercial.UserPassword)
+            {
+                MenuGestionCommerciale();
+            }
+            else
+            {
+                Esthetisme.MiseEnFormeTexte("MAUVAIS IDENTIFIANTS\n\n", ConsoleColor.Red, centre: false);
+                Esthetisme.MiseEnFormeTexte("Vous n'avez pas accès. L'application va se fermer\n\n", ConsoleColor.Red, centre: false);
+
+            }
         }
 
         public static string MenuGestionCommerciale()
