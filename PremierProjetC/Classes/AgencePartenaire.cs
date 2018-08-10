@@ -8,5 +8,11 @@ namespace PremierProjetC.Classes
 {
     public class AgencePartenaire
     {
+        public string NomAgence { get; set; }
+        public string NumeroTelephone { get; set; }
+        public string NumeroSiret { get; set; }
+        public string Email { get; set; }
+
+        public List<Voyage> Voyages { get; set }
     }
 }
