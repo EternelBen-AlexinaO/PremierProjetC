@@ -57,6 +57,7 @@
     <Compile Include="Classes\Emailing.cs" />
     <Compile Include="Classes\Participant.cs" />
     <Compile Include="Classes\Phoning.cs" />
+    <Compile Include="Classes\Promotion.cs" />
     <Compile Include="Classes\QuestionnaireSatisfaction.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
