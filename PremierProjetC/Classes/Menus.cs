@@ -17,10 +17,9 @@ namespace PremierProjetC.Classes
             Esthetisme.MiseEnFormeTexte("Nom Utilisateur:", centre: false);
             var userName=Console.ReadLine();
             Esthetisme.MiseEnFormeTexte("Mot de Passe: ", centre: false);
-            Console.ReadLine();
             var userPassword = Console.ReadLine();
-            var commercial = new Commercial(); 
-            if (userName == commercial.UserName && userPassword==commercial.UserPassword)
+            //var commercial= // faire identification
+            /*if (userName == commercial.UserName && userPassword==commercial.UserPassword)
             {
                 MenuGestionCommerciale();
             }
@@ -29,7 +28,7 @@ namespace PremierProjetC.Classes
                 Esthetisme.MiseEnFormeTexte("MAUVAIS IDENTIFIANTS\n\n", ConsoleColor.Red, centre: false);
                 Esthetisme.MiseEnFormeTexte("Vous n'avez pas accès. L'application va se fermer\n\n", ConsoleColor.Red, centre: false);
 
-            }
+            }*/
         }
 
         public static string MenuGestionCommerciale()
@@ -64,7 +63,7 @@ namespace PremierProjetC.Classes
 
             switch (choix2)
             {
-                case "1":
+                /*case "1":
                     ListerLesDossierEnAttente();
                     break;
 
@@ -82,7 +81,7 @@ namespace PremierProjetC.Classes
 
                 case "5":
                     ListeDesVoyages();
-                    break;
+                    break;*/
 
                 case "r":
                 case "R":
@@ -116,7 +115,7 @@ namespace PremierProjetC.Classes
 
             switch (choix3)
             {
-                case "1":
+                /*case "1":
                     VoirListeDesClients();
                     break;
 
@@ -130,7 +129,7 @@ namespace PremierProjetC.Classes
 
                 case "4":
                     SupprimerClient();
-                    break;
+                    break;*/
 
                 case "r":
                 case "R":
