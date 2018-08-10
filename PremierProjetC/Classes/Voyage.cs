@@ -8,5 +8,11 @@ namespace PremierProjetC
 {
     public sealed class Voyage
     {
+        public DateTime DateAller { get; set; }
+        public DateTime DateRetour { get; set; }
+        public double PrixAgence { get; set; }
+        public int NbPlacesDisponibles { get; set; }
+        public Destination Destination { get; set; }
+
     }
 }
