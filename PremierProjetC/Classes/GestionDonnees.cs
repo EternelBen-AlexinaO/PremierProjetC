@@ -9,10 +9,12 @@ namespace PremierProjetC.Classes
 {
     class GestionDonnees
     {
-        public static List<Participant>LireFichier()
+        //Lire et Ecrire le fichier Participants.txt
+        const string CheminFichierParticipants = "Participants.txt";
+        const char SeparateurChamps = ';';
+        public static List<Participant>LireFichierParticipants()
         {
-            const string CheminFichierParticipants = "Participants.txt";
-            const char SeparateurChamps = ';';
+            
 
             var participants = new List<Participant>();
             if (File.Exists(CheminFichierParticipants))
@@ -30,11 +32,22 @@ namespace PremierProjetC.Classes
                     participant.NomVoie = champs[5];
                     participant.Ville = champs[6];
                     participant.Pays = champs[7];
+                    participant.Email = champs[8];
 
                     participants.Add(participant);
                 }
             }
             return participants;
+        }
+
+        public static void EcrireFichierParticipants(IEnumerable<Participant> participants)
+        {
+            var contenuFichierParticipant = new StringBuilder();
+            foreach (var participant in participants)
+            {
+                contenuFichierParticipant.AppendLine(string.Join(SeparateurChamps.ToString(), participant.Civilite, participant.Nom, participant.Prenom, participant.DateNaissance, participant.NumeroVoie, participant.NomVoie, participant.Ville, participant.Pays, participant.Email));
+            }
+            File.WriteAllText(CheminFichierParticipants, contenuFichierParticipant.ToString());
         }
 
 
