@@ -20,5 +20,6 @@ namespace PremierProjetC.Classes
             Pays = pays;
         }
     public List<DossierReservation> DossierReservations { get; set; }
+    public List<Accompagnant> Accompagnants { get; set; }
     }
 }
