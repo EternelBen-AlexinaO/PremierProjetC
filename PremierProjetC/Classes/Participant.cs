@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PremierProjetC.Classes
 {
-    public abstract class Participant
+    public class Participant
     {
         public string Civilite { get; set; }
         public string Nom { get; set; }
@@ -17,6 +17,7 @@ namespace PremierProjetC.Classes
         public string NomVoie { get; set; }
         public string Ville { get; set; }
         public string Pays { get; set; }
+        public string Email { get; set; }
 
         
 
