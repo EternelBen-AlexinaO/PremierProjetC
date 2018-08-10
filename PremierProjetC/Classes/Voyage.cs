@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PremierProjetC
+namespace PremierProjetC.Classes
 {
     public sealed class Voyage
     {
@@ -13,6 +13,9 @@ namespace PremierProjetC
         public double PrixAgence { get; set; }
         public int NbPlacesDisponibles { get; set; }
         public Destination Destination { get; set; }
+
+        public List<DossierReservation>DossierReservations { get; set; }
+
 
     }
 }
