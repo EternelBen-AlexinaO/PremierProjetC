@@ -25,9 +25,10 @@ namespace PremierProjetC.Classes
             Console.Clear();
             Esthetisme.MiseEnFormeTexte("APPLICATION METIER DE BO VOYAGE\n\n", ConsoleColor.DarkCyan, centre: true);
             Esthetisme.MiseEnFormeTexte("Connexion réussie\n\n", ConsoleColor.Red, centre: false);
-            Esthetisme.MiseEnFormeTexte("MENU\n\n", centre: false);
-            Esthetisme.MiseEnFormeTexte("1. Gestion des voyages\n\n", centre: false);
+            Esthetisme.MiseEnFormeTexte("MENU\n", centre: false);
+            Esthetisme.MiseEnFormeTexte("1. Gestion des voyages", centre: false);
             Esthetisme.MiseEnFormeTexte("2. Gestion des clients\n\n", centre: false);
+            Esthetisme.MiseEnFormeTexte("Faites votre choix:", centre: false);
 
 
         }
