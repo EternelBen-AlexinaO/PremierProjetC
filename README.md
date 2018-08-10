@@ -8,3 +8,4 @@ nom d'utilisateur = UserCom
 Mot de passe = Password
 
 +++
+A EDITER EN FIN DE PROJET ET AVANT MERGING ******
