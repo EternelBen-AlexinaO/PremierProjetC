@@ -19,5 +19,6 @@ namespace PremierProjetC.Classes
             Ville = ville;
             Pays = pays;
         }
+    public List<DossierReservation> DossierReservations { get; set; }
     }
 }
