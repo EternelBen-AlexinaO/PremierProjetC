@@ -15,7 +15,5 @@ namespace PremierProjetC.Classes
         public Destination Destination { get; set; }
 
         public List<DossierReservation>DossierReservations { get; set; }
-
-
     }
 }
