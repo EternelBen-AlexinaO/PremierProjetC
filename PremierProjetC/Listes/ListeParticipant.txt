@@ -1,0 +1,2 @@
+Monsieur; Lario; Peter; 12/07/1982; 54; rue Criard; Nice; France; lario@gmai.com;
+Madame; Rio; Martine; 01/02/1992; 2; rue Marcle Samba; Chatres; France; mart@live.com;
