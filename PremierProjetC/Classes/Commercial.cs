@@ -14,6 +14,9 @@ namespace PremierProjetC.Classes
         public string UserPassword { get; set; }
 
         public List<Voyage>Voyages { get; set; }
+        public List<Participant> Participants { get; set; }
+        public List<DossierReservation>Dossiers { get; set; }
+        
         
     }
 }
