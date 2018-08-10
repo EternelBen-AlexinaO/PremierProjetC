@@ -42,8 +42,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Accompagnant.cs" />
+    <Compile Include="Classes\AgencePartenaire.cs" />
+    <Compile Include="Classes\Assurance.cs" />
+    <Compile Include="Classes\AssuranceAnnulation.cs" />
+    <Compile Include="Classes\AssuranceRapatriement.cs" />
+    <Compile Include="Classes\AssuranceVol.cs" />
+    <Compile Include="Classes\Banque.cs" />
+    <Compile Include="Classes\CampagneCommerciale.cs" />
+    <Compile Include="Classes\Client.cs" />
+    <Compile Include="Classes\Commercial.cs" />
+    <Compile Include="Classes\Destination.cs" />
+    <Compile Include="Classes\DossierReservation.cs" />
+    <Compile Include="Classes\Emailing.cs" />
+    <Compile Include="Classes\Participant.cs" />
+    <Compile Include="Classes\Phoning.cs" />
+    <Compile Include="Classes\QuestionnaireSatisfaction.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Classes\Voyage.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
