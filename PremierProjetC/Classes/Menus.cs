@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using PremierProjetC.Classes;
 
 namespace PremierProjetC.Classes
 {
@@ -16,10 +17,14 @@ namespace PremierProjetC.Classes
             Esthetisme.MiseEnFormeTexte("Veuillez vous identifier\n", centre: false);
             Esthetisme.MiseEnFormeTexte("Nom Utilisateur:", centre: false);
             var userName=Console.ReadLine();
+
             Esthetisme.MiseEnFormeTexte("Mot de Passe: ", centre: false);
             var userPassword = Console.ReadLine();
-            //var commercial= // faire identification
-            /*if (userName == commercial.UserName && userPassword==commercial.UserPassword)
+
+            var commercial = userName;
+            var password = userPassword;
+
+            if (userName == commercial && userPassword == password)
             {
                 MenuGestionCommerciale();
             }
@@ -28,10 +33,10 @@ namespace PremierProjetC.Classes
                 Esthetisme.MiseEnFormeTexte("MAUVAIS IDENTIFIANTS\n\n", ConsoleColor.Red, centre: false);
                 Esthetisme.MiseEnFormeTexte("Vous n'avez pas accès. L'application va se fermer\n\n", ConsoleColor.Red, centre: false);
 
-            }*/
+            }
         }
 
-        public static string MenuGestionCommerciale()
+        public static void MenuGestionCommerciale()
         {
             Console.Clear();
             Esthetisme.MiseEnFormeTexte("APPLICATION METIER DE BO VOYAGE\n\n", ConsoleColor.DarkCyan, centre: true);
@@ -42,7 +47,30 @@ namespace PremierProjetC.Classes
             Esthetisme.MiseEnFormeTexte("Q. Quitter\n\n", centre: false);
             Esthetisme.MiseEnFormeTexte("Faites votre choix:", centre: false);
 
-            return Console.ReadLine();
+            var choixMenuGestionCommerciale = Console.ReadLine();
+            switch (choixMenuGestionCommerciale)
+            {
+                case "1":
+                    MenuGestionVoyages();
+                    break;
+
+                case "2":
+                    MenuGestionClients();
+                    break;
+
+                case "r":
+                case "R":
+                    MenuGestionCommerciale();
+                    break;
+
+                case "q":
+                case "Q":
+                    break;
+                default:
+                    Classes.Esthetisme.MiseEnFormeTexte("Choix invalide, l'application va fermer", ConsoleColor.Red, centre: false);
+                    break;
+            }
+            Console.ReadKey();
         }
 
         public static void MenuGestionVoyages()
@@ -59,9 +87,8 @@ namespace PremierProjetC.Classes
             Esthetisme.MiseEnFormeTexte("Q. Quitter\n\n", centre: false);
             Esthetisme.MiseEnFormeTexte("Faites votre choix:", centre: false);
 
-            var choix2 = Console.ReadLine();
-
-            switch (choix2)
+            var choixMenuGestionVoyages = Console.ReadLine();
+            switch (choixMenuGestionVoyages)
             {
                 /*case "1":
                     ListerLesDossierEnAttente();
@@ -111,9 +138,8 @@ namespace PremierProjetC.Classes
             Esthetisme.MiseEnFormeTexte("Q. Quitter\n\n", centre: false);
             Esthetisme.MiseEnFormeTexte("Faites votre choix:", centre: false);
 
-            var choix3 = Console.ReadLine();
-
-            switch (choix3)
+            var choixMenuGestionClients = Console.ReadLine();
+            switch (choixMenuGestionClients)
             {
                 /*case "1":
                     VoirListeDesClients();
