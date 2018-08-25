@@ -16,8 +16,8 @@ namespace PremierProjetC //renommer le nom du Proj suivant le projet donné
             bool continuer = true;
             while (continuer)
             {
-                var choix = Classes.Menus.MenuGestionCommerciale();
-                switch (choix)
+                var mGesCial = Classes.Menus.MenuGestionCommerciale();
+                switch (mGesCial)
                 {
                     case "1":
                         Classes.Menus.MenuGestionVoyages();
