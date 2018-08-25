@@ -33,7 +33,6 @@ namespace PremierProjetC.Classes
 
         public static string MenuGestionCommerciale()
         {
-            Console.Clear();
             Esthetisme.MiseEnFormeTexte("APPLICATION METIER DE BO VOYAGE\n\n", ConsoleColor.DarkCyan, centre: true);
             Esthetisme.MiseEnFormeTexte("Connexion réussie\n\n", ConsoleColor.Red, centre: false);
             Esthetisme.MiseEnFormeTexte("MENU\n", centre: false);
@@ -43,11 +42,12 @@ namespace PremierProjetC.Classes
             Esthetisme.MiseEnFormeTexte("Faites votre choix:", centre: false);
 
             return Console.ReadLine();
+            Console.Clear();
+
         }
 
         public static void MenuGestionVoyages()
         {
-            Console.Clear();
             Esthetisme.MiseEnFormeTexte("APPLICATION METIER DE BO VOYAGE\n\n", ConsoleColor.DarkCyan, centre: true);
             Esthetisme.MiseEnFormeTexte("GESTION DES VOYAGES\n", centre: false);
             Esthetisme.MiseEnFormeTexte("1. Voir les dossiers en attente", centre: false);
@@ -59,11 +59,11 @@ namespace PremierProjetC.Classes
             Esthetisme.MiseEnFormeTexte("Q. Quitter\n\n", centre: false);
             Esthetisme.MiseEnFormeTexte("Faites votre choix:", centre: false);
 
-            var choix2 = Console.ReadLine();
+            var gesVoyage = Console.ReadLine();
 
-            switch (choix2)
-            {
-                /*case "1":
+            switch (gesVoyage)
+            {//En attente de création de commande pour recuperer les listes
+              /*  case "1":
                     ListerLesDossierEnAttente();
                     break;
 
@@ -81,8 +81,8 @@ namespace PremierProjetC.Classes
 
                 case "5":
                     ListeDesVoyages();
-                    break;*/
-
+                    break; */
+            /////////////////////////////////////////////////////////////////
                 case "r":
                 case "R":
                     MenuGestionCommerciale();
@@ -96,11 +96,12 @@ namespace PremierProjetC.Classes
                     break;
             }
             Console.ReadKey();
+            Console.Clear();
+
         }
 
         public static void MenuGestionClients()
         {
-            Console.Clear();
             Esthetisme.MiseEnFormeTexte("APPLICATION METIER DE BO VOYAGE\n\n", ConsoleColor.DarkCyan, centre: true);
             Esthetisme.MiseEnFormeTexte("GESTION DES CLIENTS\n", centre: false);
             Esthetisme.MiseEnFormeTexte("1. Voir la liste des clients", centre: false);
@@ -111,11 +112,11 @@ namespace PremierProjetC.Classes
             Esthetisme.MiseEnFormeTexte("Q. Quitter\n\n", centre: false);
             Esthetisme.MiseEnFormeTexte("Faites votre choix:", centre: false);
 
-            var choix3 = Console.ReadLine();
+            var gesDesClients = Console.ReadLine();
 
-            switch (choix3)
-            {
-                /*case "1":
+            switch (gesDesClients)
+            {// En attente de la commande qui recuperera les donnees dans la liste
+             /*   case "1":
                     VoirListeDesClients();
                     break;
 
@@ -129,7 +130,8 @@ namespace PremierProjetC.Classes
 
                 case "4":
                     SupprimerClient();
-                    break;*/
+                    break; */
+             /////////////////////////////////////////////////////////////////
 
                 case "r":
                 case "R":
@@ -144,6 +146,8 @@ namespace PremierProjetC.Classes
                     break;
             }
             Console.ReadKey();
+            Console.Clear();
+
 
         }
     }
