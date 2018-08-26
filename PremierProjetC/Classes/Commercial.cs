@@ -15,7 +15,10 @@ namespace PremierProjetC.Classes
 
         public override string ToString()
         {
-            return $"{Nom} {Prenom} {UserName} {UserPassword} ";
+            // return $"{Nom} {Prenom} {UserName} {UserPassword} ";
+            /// Notre liste de commerciaux, ne contient pour le moment que des userName et des UserPassword
+            return $"{UserName} {UserPassword} ";
+
         }
 
         public List<Voyage>Voyages { get; set; }
