@@ -58,6 +58,7 @@
     <Compile Include="Classes\Emailing.cs" />
     <Compile Include="Classes\Esthetisme.cs" />
     <Compile Include="Classes\GestionDonnees.cs" />
+    <Compile Include="Classes\Listes.cs" />
     <Compile Include="Classes\Menus.cs" />
     <Compile Include="Classes\Participant.cs" />
     <Compile Include="Classes\Phoning.cs" />

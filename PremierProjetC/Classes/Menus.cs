@@ -13,20 +13,21 @@ namespace PremierProjetC.Classes
             Esthetisme.MiseEnFormeTexte("APPLICATION METIER DE BO VOYAGE\n\n", ConsoleColor.DarkCyan, centre: true);
             Esthetisme.MiseEnFormeTexte("Cette application permet de gérer les voyages et les clients de BoVoyage\n\n", ConsoleColor.DarkCyan, centre: true);
             Esthetisme.MiseEnFormeTexte("Page intranet dédié à la gestion de notre clientele.\nLa manipulation de vos dossiers client et ainsi que la gestion de vos dossiers voyages sera facilité.\n\nEn cas de difficultée, veuillez prendre contact avec notre service d'administration réseau.\n\nSite intranet fournit par AxT@Tech.com\n\n", ConsoleColor.DarkGray, centre: false);
-            Esthetisme.MiseEnFormeTexte("Veuillez commencer par vous identifier\n", centre: false);
+            Esthetisme.MiseEnFormeTexte("Veuillez commencer par vous identifier\n", centre: true);
 
-            Esthetisme.MiseEnFormeTexte("Votre nom Utilisateur :", centre: false);
+            Esthetisme.MiseEnFormeTexte("Votre nom Utilisateur :",ConsoleColor.Yellow, centre: false);
             var userName = Console.ReadLine();
             /// j'essai de faire la verif du mot de passe
-            // var name = userName;
-            // foreach (name = List<ListeCommercial.txt>(userName, "UserCom"))
-            // {
-            //    do
+            var name = userName;
+            foreach (userName=> List<ListeCommercial.txt>(name, "UserCom")
+                {
+                do
+                    Esthetisme.MiseEnFormeTexte("Ainsi que votre Mot de Passe: ", ConsoleColor.Yellow, centre: false);
+                {
+                    var userPassword = Console.ReadLine();
 
-            Esthetisme.MiseEnFormeTexte("Ainsi que votre Mot de Passe: ", centre: false);
-            var userPassword = Console.ReadLine();
-            //var commercial= // faire identification
-            /*if (userName == commercial.UserName && userPassword==commercial.UserPassword)
+                    var commercial= // faire identification
+            if (userName == commercial.UserName && userPassword==commercial.UserPassword)
                 MenuGestionCommerciale();
             }
             {

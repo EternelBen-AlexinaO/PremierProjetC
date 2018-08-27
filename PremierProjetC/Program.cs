@@ -7,7 +7,7 @@ using System.IO; //permet l'utilisation de recherche de fichier dans le system l
 
 namespace PremierProjetC //renommer le nom du Proj suivant le projet donné
 {
-    class Program // renommer la classe Program par le nom de la classe principal qui identifira le nom du programme à creer et qui servira de point d'entrée via le Main. 
+    class Program
     {
         static void Main(string[] args)
         {
