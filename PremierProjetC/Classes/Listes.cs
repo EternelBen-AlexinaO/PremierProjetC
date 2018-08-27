@@ -14,20 +14,20 @@ namespace PremierProjetC.Classes
         private string ListeVoyage { get; set; }
 
     }
-        public string getListeClient()
+        public string ListeClient(Client);
         {
         Get Client
         }
 
-        public class ListeCommercial
+        public string ListeCommercial (Commercial)
         {
 
         }
-        public class ListeParticipant
+        public string ListeParticipant(Participant)
         {
 
         } 
-        public class ListeVoyage
+        public string ListeVoyage(Voyage)
         {
 
         }

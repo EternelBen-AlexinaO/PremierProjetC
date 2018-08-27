@@ -15,15 +15,14 @@ namespace PremierProjetC.Classes
             Esthetisme.MiseEnFormeTexte("Page intranet dédié à la gestion de notre clientele.\nLa manipulation de vos dossiers client et ainsi que la gestion de vos dossiers voyages sera facilité.\n\nEn cas de difficultée, veuillez prendre contact avec notre service d'administration réseau.\n\nSite intranet fournit par AxT@Tech.com\n\n", ConsoleColor.DarkGray, centre: false);
             Esthetisme.MiseEnFormeTexte("Veuillez commencer par vous identifier\n", centre: true);
 
-            Esthetisme.MiseEnFormeTexte("Votre nom Utilisateur :",ConsoleColor.Yellow, centre: false);
-            var userName = Console.ReadLine();
+            {
+                    Esthetisme.MiseEnFormeTexte("Votre nom Utilisateur :",ConsoleColor.Yellow, centre: false);
+                    string commercial = Console.ReadLine();
             /// j'essai de faire la verif du mot de passe
-            var name = userName;
-            foreach (userName=> List<ListeCommercial.txt>(name, "UserCom")
-                {
-                do
+                    bool List<ListeCommercial> (string commercial) && List<ListeCommercial>(commercial& $"{3},UserCom")) = true
                     Esthetisme.MiseEnFormeTexte("Ainsi que votre Mot de Passe: ", ConsoleColor.Yellow, centre: false);
-                {
+
+                    Esthetisme.MiseEnFormeTexte("Ainsi que votre Mot de Passe: ", ConsoleColor.Yellow, centre: false);
                     var userPassword = Console.ReadLine();
 
                     var commercial= // faire identification
