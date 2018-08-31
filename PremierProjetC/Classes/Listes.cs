@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PremierProjetC.Classes
 {
-    class Listes
+    public class Listes
     {
         private string ListeClient { get; set; }
         private string ListeCommercial { get; set; }
@@ -14,20 +14,20 @@ namespace PremierProjetC.Classes
         private string ListeVoyage { get; set; }
 
     }
-        public string ListeClient(Client);
+        static string getListeClient(Client)
         {
-        Get Client
+        
         }
 
-        public string ListeCommercial (Commercial)
+        static string ListeCommercial (Commercial)
         {
 
         }
-        public string ListeParticipant(Participant)
+        static string getListeParticipant(Participant)
         {
 
         } 
-        public string ListeVoyage(Voyage)
+        static string getListeVoyage(Voyage)
         {
 
         }
