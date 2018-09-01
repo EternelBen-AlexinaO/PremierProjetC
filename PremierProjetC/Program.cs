@@ -20,15 +20,15 @@ namespace PremierProjetC //renommer le nom du Proj suivant le projet donné
                 var choixPageAccueil = MenuGestionCommerciale();
                 switch (choixPageAccueil)
                 {
-                    case "1":
+                    case 1:
                         Classes.Menus.MenuGestionVoyages();
                         break;
 
-                    case "2":
+                    case 2:
                         Classes.Menus.MenuGestionClients();
                         break;
 
-                    case "q":
+                    case 3:
                     case "Q":
                         continuer = false;
                         break;

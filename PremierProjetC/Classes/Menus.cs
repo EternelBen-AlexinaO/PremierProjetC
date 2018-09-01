@@ -67,7 +67,7 @@ namespace PremierProjetC.Classes
                 case "Q":
                     break;
                 default:
-                    Classes.Esthetisme.MiseEnFormeTexte("Choix invalide, l'application va fermer", ConsoleColor.Red, centre: false);
+                    Esthetisme.MiseEnFormeTexte("Choix invalide, l'application va fermer", ConsoleColor.Red, centre: false);
                     break;
             }
             Console.ReadKey();
@@ -119,7 +119,7 @@ namespace PremierProjetC.Classes
                 case "Q":
                     break;
                 default:
-                    Classes.Esthetisme.MiseEnFormeTexte("Choix invalide, l'application va fermer", ConsoleColor.Red, centre: false);
+                    Esthetisme.MiseEnFormeTexte("Choix invalide, l'application va fermer", ConsoleColor.Red, centre: false);
                     break;
             }
             Console.ReadKey();
@@ -166,7 +166,7 @@ namespace PremierProjetC.Classes
                 case "Q":
                     break;
                 default:
-                    Classes.Esthetisme.MiseEnFormeTexte("Choix invalide, l'application va fermer", ConsoleColor.Red, centre: false);
+                    Esthetisme.MiseEnFormeTexte("Choix invalide, l'application va fermer", ConsoleColor.Red, centre: false);
                     break;
             }
             Console.ReadKey();
