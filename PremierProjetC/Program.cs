@@ -3,29 +3,28 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using PremierProjetC.Classes; // permet l'utilisation des classes créées dans le projet ; cf la variable "var mGesCial"
 //using System.IO; //classe system permetant le traitement de données en entrée et sortie lors de l'apl de fonction List<FileInfo> Files et accessible via get et nu set | { get; set; }
 
-namespace PremierProjetC //renommer le nom du Proj suivant le projet donné
+namespace PremierProjetC.Classes //renommer le nom du Proj suivant le projet donné
 {
     class Program
     {
         static void Main(string[] args)
         {
-          Classes.Menus.PageAccueil();
+          Menus.PageAccueil();
 
             bool continuer = true;
             while (continuer)
             {
-                var mGesCial = MenuGestionCommerciale();
+                var mGesCial = Menus.MenuGestionCommerciale();
                 switch (mGesCial)
                 {
                     case "1":
-                        MenuGestionVoyages();
+                        Menus.MenuGestionVoyages();
                         break;
 
                     case "2":
-                        MenuGestionClients();
+                        Menus.MenuGestionClients();
                         break;
 
                     case "q":
