@@ -13,15 +13,14 @@ namespace PremierProjetC.Classes
         private string ListeParticipant { get; set; }
         private string ListeVoyage { get; set; }
 
-    }
         static string getListeClient(Client)
         {
         
         }
 
-        static string ListeCommercial (Commercial)
+        static string getListeCommercial (Commercial)
         {
-
+        List<getListeCommercial>
         }
         static string getListeParticipant(Participant)
         {
@@ -31,4 +30,5 @@ namespace PremierProjetC.Classes
         {
 
         }
+    }
 }

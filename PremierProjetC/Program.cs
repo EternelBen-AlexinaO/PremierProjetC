@@ -3,15 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using PremierProjetC.Classes;
+
 //using System.IO; //classe system permetant le traitement de données en entrée et sortie lors de l'apl de fonction List<FileInfo> Files et accessible via get et nu set | { get; set; }
 
-namespace PremierProjetC.Classes //renommer le nom du Proj suivant le projet donné
+namespace PremierProjetC // espace de nom du Projet principal
 {
-    class Program
+    class Program // nom de la classe de demarage
     {
-        static void Main(string[] args)
+        static void Main(string[] args) // mehtode d'entrée dans le programme
         {
-          Menus.PageAccueil();
+          Menus.PageAccueil(); // apl de la methode dans la classe Menus 
 
             bool continuer = true;
             while (continuer)
