@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.IO; //permet l'utilisation de recherche de fichier dans le system lors de l'apl de fonction List<FileInfo> Files { get; set; }
+using PremierProjetC.Classes; // permet l'utilisation des classes créées dans le projet ; cf la variable "var mGesCial"
+//using System.IO; //classe system permetant le traitement de données en entrée et sortie lors de l'apl de fonction List<FileInfo> Files et accessible via get et nu set | { get; set; }
 
 namespace PremierProjetC //renommer le nom du Proj suivant le projet donné
 {
@@ -16,29 +17,30 @@ namespace PremierProjetC //renommer le nom du Proj suivant le projet donné
             bool continuer = true;
             while (continuer)
             {
-                var mGesCial = Classes.Menus.MenuGestionCommerciale();
+                var mGesCial = MenuGestionCommerciale();
                 switch (mGesCial)
                 {
                     case "1":
-                        Classes.Menus.MenuGestionVoyages();
+                        MenuGestionVoyages();
                         break;
 
                     case "2":
-                        Classes.Menus.MenuGestionClients();
+                        MenuGestionClients();
                         break;
+
                     case "q":
                     case "Q":
                         continuer = false;
                         break;
+
                     default:
-                        Classes.Esthetisme.MiseEnFormeTexte("Choix invalide, l'application va fermer", ConsoleColor.Red, centre: false);
+                        Esthetisme.MiseEnFormeTexte("Choix invalide, l'application va fermer", ConsoleColor.Red, centre: false);
                         continuer = false;
                         break;
                 }
-
             }
             Console.ReadKey();
             Console.Clear();
-         }
+        }
     }
 }
