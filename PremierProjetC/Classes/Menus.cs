@@ -13,29 +13,30 @@ namespace PremierProjetC.Classes
             Esthetisme.MiseEnFormeTexte("APPLICATION METIER DE BO VOYAGE\n\n", ConsoleColor.DarkCyan, centre: true);
             Esthetisme.MiseEnFormeTexte("Cette application permet de gérer les voyages et les clients de BoVoyage\n\n", ConsoleColor.DarkCyan, centre: true);
             Esthetisme.MiseEnFormeTexte("Page intranet dédié à la gestion de notre clientele.\nLa manipulation de vos dossiers client et ainsi que la gestion de vos dossiers voyages sera facilité.\n\nEn cas de difficultée, veuillez prendre contact avec notre service d'administration réseau.\n\nSite intranet fournit par AxT@Tech.com\n\n", ConsoleColor.DarkGray, centre: false);
-            Esthetisme.MiseEnFormeTexte("Veuillez commencer par vous identifier\n",ConsoleColor.White, centre = true);
+            Esthetisme.MiseEnFormeTexte("Veuillez commencer par vous identifier\n",ConsoleColor.White, centre: true);
 
             {
                 Esthetisme.MiseEnFormeTexte("Votre nom Utilisateur :",ConsoleColor.Yellow, centre: false);
                 /// j'essai de faire la verif du mot de passe
                if ("UserCom") Console.ReadLine();
-                    {
-                          Esthetisme.MiseEnFormeTexte("Ainsi que votre Mot de Passe: ", ConsoleColor.Yellow, centre: false);
-                         var userPassword = Console.ReadLine();
-                    
+                {
+                    Esthetisme.MiseEnFormeTexte("Ainsi que votre Mot de Passe: ", ConsoleColor.Yellow, centre: false);
+                    var userPassword = Console.ReadLine();
+                }                    
       //               var commercial= // faire identification
        //     if (userName == commercial.UserName && userPassword==commercial.UserPassword)
        //         MenuGestionCommerciale();
       //      }
                 else
                 {
-                Esthetisme.MiseEnFormeTexte("MAUVAIS IDENTIFIANTS\n\n", ConsoleColor.Red, centre: false);
-                Esthetisme.MiseEnFormeTexte("Vous n'avez pas accès. L'application va se fermer\n\n", ConsoleColor.Red, centre: false);
+                    Esthetisme.MiseEnFormeTexte("MAUVAIS IDENTIFIANTS\n\n", ConsoleColor.Red, centre: false);
+                    Esthetisme.MiseEnFormeTexte("Vous n'avez pas accès. L'application va se fermer\n\n", ConsoleColor.Red, centre: false);
                 }
-            Console.Clear();
-        }
+                Console.Clear();
             }
-        public static string MenuGestionCommerciale()
+        }
+
+        string MenuGestionCommerciale()
         {
             Esthetisme.MiseEnFormeTexte("APPLICATION METIER DE BO VOYAGE\n\n", ConsoleColor.DarkCyan, centre: true);
             Esthetisme.MiseEnFormeTexte("Connexion réussie\n\n", ConsoleColor.Red, centre: false);
@@ -49,7 +50,7 @@ namespace PremierProjetC.Classes
             return Console.ReadLine();
         }
 
-        public static void MenuGestionVoyages()
+        string MenuGestionVoyages()
         {
             Esthetisme.MiseEnFormeTexte("APPLICATION METIER DE BO VOYAGE\n\n", ConsoleColor.DarkCyan, centre: true);
             Esthetisme.MiseEnFormeTexte("GESTION DES VOYAGES\n", centre: false);
@@ -101,10 +102,9 @@ namespace PremierProjetC.Classes
             }
             Console.ReadKey();
             Console.Clear();
-
         }
 
-        public static void MenuGestionClients()
+        string MenuGestionClients()
         {
             Esthetisme.MiseEnFormeTexte("APPLICATION METIER DE BO VOYAGE\n\n", ConsoleColor.DarkCyan, centre: true);
             Esthetisme.MiseEnFormeTexte("GESTION DES CLIENTS\n", centre: false);
@@ -134,7 +134,7 @@ namespace PremierProjetC.Classes
 
                 case "4":
                     SupprimerClient();
-                    break; */
+          static          break; */
              /////////////////////////////////////////////////////////////////
 
                 case "r":
@@ -146,7 +146,7 @@ namespace PremierProjetC.Classes
                 case "Q":
                     break;
                 default:
-                    Classes.Esthetisme.MiseEnFormeTexte("Choix invalide, l'application va fermer", ConsoleColor.Red, centre: false);
+                    Esthetisme.MiseEnFormeTexte("Choix invalide, l'application va fermer", ConsoleColor.Red, centre: false);
                     break;
             }
             Console.ReadKey();
