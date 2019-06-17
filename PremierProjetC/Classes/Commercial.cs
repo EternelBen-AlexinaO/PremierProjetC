@@ -15,6 +15,8 @@ namespace PremierProjetC.Classes
 
         public override string ToString()
         {
+            Nom  = ["toto", "titi", "tata"]; // essai de creation d'une liste depuyis un tableau ; revoir.
+            Prenom = Console.ReadLine();
             // return $"{Nom} {Prenom} {UserName} {UserPassword} ";
             /// Notre liste de commerciaux, ne contient pour le moment que des userName et des UserPassword
             return $"{UserName} {UserPassword} ";
@@ -24,7 +26,5 @@ namespace PremierProjetC.Classes
         public List<Voyage> Voyages { get; set; }
         public List<Participant> Participants { get; set; }
         public List<DossierReservation> Dossiers { get; set; }
-        
-        
     }
 }
