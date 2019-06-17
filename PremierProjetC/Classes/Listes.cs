@@ -10,13 +10,11 @@ namespace PremierProjetC.Classes
     {
         private string ListeClient { get; set; }
         private string ListeCommercial { get; set; }
+
         private string ListeParticipant { get; set; }
         private string ListeVoyage { get; set; }
 
-        static string getListeClient(Client)
-        {
-        
-        }
+        static List<Client>
 
         static string getListeCommercial (Commercial)
         {
