@@ -10,33 +10,33 @@ namespace PremierProjetC.Classes
     {
         public static void PageAccueil()
         {
-            Esthetisme.MiseEnFormeTexte("APPLICATION METIER DE BO VOYAGE\n\n", ConsoleColor.DarkCyan, centre: true);
+            Esthetisme.MiseEnFormeTexte("APPLICATION METIER - BO VOYAGE\n\n", ConsoleColor.DarkCyan, centre: true);
             Esthetisme.MiseEnFormeTexte("Cette application permet de gérer les voyages et les clients de BoVoyage\n\n", ConsoleColor.DarkCyan, centre: true);
             Esthetisme.MiseEnFormeTexte("Page intranet dédié à la gestion de notre clientele.\nLa manipulation de vos dossiers client et ainsi que la gestion de vos dossiers voyages sera facilité.\n\nEn cas de difficultée, veuillez prendre contact avec notre service d'administration réseau.\n\nSite intranet fournit par AxT@Tech.com\n\n", ConsoleColor.DarkGray, centre: false);
             Esthetisme.MiseEnFormeTexte("Veuillez commencer par vous identifier\n",ConsoleColor.White, centre: true);
 
-                Esthetisme.MiseEnFormeTexte("Votre nom Utilisateur :",ConsoleColor.Yellow, centre: false);
-                var userConnexionName = Console.ReadLine();
+            Esthetisme.MiseEnFormeTexte("Votre nom Utilisateur :",ConsoleColor.Yellow, centre: false);
+            var userConnexionName = Console.ReadLine();
 
-                Esthetisme.MiseEnFormeTexte("Ainsi que votre Mot de Passe: ", ConsoleColor.Yellow, centre: false);
-                var userConnexionPassword = Console.ReadLine();
+            Esthetisme.MiseEnFormeTexte("Ainsi que votre Mot de Passe: ", ConsoleColor.Yellow, centre: false);
+            var userConnexionPassword = Console.ReadLine();
 
-                //var UserConnexionName = Listes<Commercial> Commercial.UserName();
-                bool connexionEntries = Convert.ToBoolean(userConnexionName + userConnexionPassword);
+            //var UserConnexionName = Listes<Commercial> Commercial.UserName();
+            bool connexionEntries = Convert.ToBoolean(userConnexionName + userConnexionPassword);
 
-                //var connexion = List<Commercial> Commercial { set userName ;};
-                //var connexion == Commercial.UserName && Commercial.UserPassword;
+            //var connexion = List<Commercial> Commercial { set userName ;};
+            //var connexion == Commercial.UserName && Commercial.UserPassword;
 
-                if (!connexionEntries) //creer une methode connexionEntries avec username and userpassword comme paramètre de retour afin de verifier ensuite l'égalité via un boolean ensuite
+            if (connexionEntries) //creer une methode connexionEntries avec username and userpassword comme paramètre de retour afin de verifier ensuite l'égalité via un boolean ensuite
             {
-                    Esthetisme.MiseEnFormeTexte("MAUVAIS IDENTIFIANTS\n\n", ConsoleColor.Red, centre: false);
-                    Esthetisme.MiseEnFormeTexte("Vous n'avez pas accès. L'application va se fermer\n\n", ConsoleColor.Red, centre: false);
-                }
-                else
-                {
-                    MenuGestionCommerciale();
-                }
-                Console.Clear();
+                MenuGestionCommerciale();
+            }
+            else
+            {
+                Esthetisme.MiseEnFormeTexte("MAUVAIS IDENTIFIANTS\n\n", ConsoleColor.Red, centre: false);
+                Esthetisme.MiseEnFormeTexte("Vous n'avez pas accès. L'application va se fermer\n\n", ConsoleColor.Red, centre: false);
+            }
+            Console.Clear();
         }
 
         public static string MenuGestionCommerciale()

@@ -7,9 +7,9 @@ using PremierProjetC.Classes;
 
 //using System.IO; //classe system permetant le traitement de données en entrée et sortie lors de l'apl de fonction List<FileInfo> Files et accessible via get et nu set | { get; set; }
 
-namespace PremierProjetC // espace de nom du Projet principal
+namespace PremierProjetC    // espace de nom du Projet principal
 {
-    class Program // nom de la classe de demarage
+    class Program   // nom de la classe de demarage
     {
         static void Main(string[] args) // mehtode d'entrée dans le programme
         {
@@ -18,8 +18,8 @@ namespace PremierProjetC // espace de nom du Projet principal
             bool continuer = true;
             while (continuer)
             {
-                var mGesCial = Menus.MenuGestionCommerciale();
-                switch (mGesCial)
+                var mGestCial = Menus.MenuGestionCommerciale();
+                switch (mGestCial)
                 {
                     case "1":
                         Menus.MenuGestionVoyages();
@@ -35,7 +35,7 @@ namespace PremierProjetC // espace de nom du Projet principal
                         break;
 
                     default:
-                        Esthetisme.MiseEnFormeTexte("Choix invalide, l'application va fermer", ConsoleColor.Red, centre: false);
+                        Esthetisme.MiseEnFormeTexte("Choix invalide, l'application va se fermer", ConsoleColor.Red, centre: false);
                         continuer = false;
                         break;
                 }
